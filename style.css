@@ -1,0 +1,145 @@
+:root{
+	--button-bg: hsl(158, 36%, 37%);
+	--bg-bg: hsl(30, 38%, 92%);
+	--card-bg: hsl(0, 0%, 100%);
+	--p-color: hsl(228, 12%, 48%);
+	--title-color: hsl(212, 21%, 14%);
+}
+
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	font-family: Montserrat;
+	background: var(--bg-bg);
+}
+
+.desc_divisory{
+	padding: 2em;
+	max-width: calc(100% - 2em);
+}
+
+.unit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 23.4em;
+	padding: 0;
+	background: var(--card-bg);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+img{
+	max-width: 100%;
+}
+
+.spacy{
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.5em;
+	font-weight: 500;
+	opacity: 50%;
+	color: var(--p-color);
+	font-size: 0.75em;
+}
+
+p{
+	color: var(--p-color);
+	font-size: 0.98em
+}
+
+.pricy{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+h1, .pricy__current{
+	font-family: "Fraunces", serif;
+}
+
+h1{
+	margin: 0.2em 0;
+}
+
+.pricy__current{
+	font-size: 2em;
+	color: var(--button-bg);
+	margin-right: 1em;
+	font-weight: 700;
+}
+
+.pricy__cutty{
+	color: var(--p-color);
+	font-weight: 500;
+	font-size: 0.75em;
+}
+
+.addCart{
+	text-decoration: none;
+	width: 100%;
+	margin: 0;
+	padding: 1em 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.75em;
+	text-align: center;
+	background: var(--button-bg);
+	color: var(--bg-bg);
+	border-radius: 0.5em;
+	font-weight: 700;
+	margin: 1em 0;
+}
+
+.icon{
+	max-width: 2em; max-height: 2em;
+}
+
+path{
+	transform: scale(2);
+}
+
+@media (min-width: 28em){
+	.unit{
+		flex-direction: row;
+		max-width: initial;
+		max-height: initial;
+	}
+	img{
+		width: initial;
+		height: 100%;
+	}
+	p{
+		font-size: 0.75em;
+	}
+	.desc_divisory{
+		padding: 0 2.5em;
+		max-width: calc(50% - 4em);
+		max-height: calc(100% - 2em);
+	}
+	.pricy{
+		margin: 1.2em 0;
+	}
+	.pricy__cutty{
+		font-size: 1.5em;
+	}
+	.pricy__current{
+		font-size: 3em;
+	}
+	.attribution{
+		font-size: 0.4em;
+	}
+	.addCart{
+		font-size: 1em;
+	}
+	.icon{
+		width: 2em; height: 2em;
+	}
+}
