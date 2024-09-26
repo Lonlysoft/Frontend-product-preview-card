@@ -97,6 +97,10 @@ h1{
 	font-weight: 700;
 	margin: 1em 0;
 }
+.addCart:hover{
+	background: var(--title-color);
+}
+
 
 .icon{
 	max-width: 2em; max-height: 2em;
