@@ -113,7 +113,7 @@ path{
 @media (min-width: 28em){
 	.unit{
 		flex-direction: row;
-		max-width: 45em;
+		max-width: 40em;
 		max-height: initial;
 	}
 	img{
