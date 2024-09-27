@@ -113,7 +113,7 @@ path{
 @media (min-width: 28em){
 	.unit{
 		flex-direction: row;
-		max-width: initial;
+		max-width: 45em;
 		max-height: initial;
 	}
 	img{
@@ -132,10 +132,10 @@ path{
 		margin: 1.2em 0;
 	}
 	.pricy__cutty{
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.pricy__current{
-		font-size: 3em;
+		font-size: 2.3em;
 	}
 	.attribution{
 		font-size: 0.4em;
